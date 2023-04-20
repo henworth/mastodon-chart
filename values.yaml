@@ -1,6 +1,6 @@
 image:
-  repository: tootsuite/mastodon
-  # https://hub.docker.com/r/tootsuite/mastodon/tags
+  repository: ghcr.io/mastodon/mastodon
+  # https://github.com/mastodon/mastodon/pkgs/container/mastodon
   #
   # alternatively, use `latest` for the latest release or `edge` for the image
   # built from the most recent commit
@@ -138,6 +138,7 @@ mastodon:
     domain:
     enable_starttls: 'auto'
     from_address: notifications@example.com
+    return_path:
     openssl_verify_mode: peer
     port: 587
     reply_to:
